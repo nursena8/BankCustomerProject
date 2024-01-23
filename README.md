@@ -129,6 +129,19 @@ To start the Streamlit application, follow these steps:
  !pip install evidently
 2. Import evidently
 3. Monitor model performance metrics and useful data dashboards
+## Future Work
+
+1. **Continuous Improvement:**
+   - Plan for continuous model improvement based on ongoing monitoring and feedback.
+
+2. **Additional Features:**
+   - Explore the incorporation of new features for enhanced predictive power.
+
+3. **Advanced Models:**
+   - Investigate the implementation of advanced machine learning models for further accuracy.
+
+4. **Feedback Mechanism:**
+   - Establish a feedback mechanism for customers to provide insights into their preferences.
 
 ## License
 This project has MIT License
