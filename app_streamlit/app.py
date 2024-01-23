@@ -3,9 +3,12 @@ import pandas as pd
 import joblib
 import numpy as np
 from streamlit.components.v1 import html
-import os
+from sklearn.ensemble import GradientBoostingClassifier
+def load_data():
+    data = pd.read_csv('Bank Customer Churn Prediction.csv') 
+    return data
 current_directory = os.path.dirname(os.path.abspath(__file__))
-model_file_path = os.path.join(current_directory, "gbm_model_production.joblib")
+
 
 st.set_page_config(page_title="Customer Churn Prediction App", page_icon=":bar_chart:")
 
@@ -24,6 +27,7 @@ st.sidebar.markdown("---")
 if page == "Prediction":
     st.markdown("## Customer Churn Prediction")
     st.write("Enter customer information to get predictions.")
+    data = load_data()
     credit_score = st.text_input("Credit score 300-850", "850")
     tenure = st.selectbox("Choose year amount of the spent at the bank", [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20])
     age = st.slider("Choose age", 18, 92)
@@ -33,12 +37,20 @@ if page == "Prediction":
 
 
     if st.button("Predict"):
-        loaded_model  = joblib.load(model_file_path)
-        row = np.array([credit_score, tenure, age, balance, estimated_salary, products_number])
+        # Giriş verilerini bir NumPy dizisine çevir
+        row = np.array([float(credit_score), float(tenure), float(age), float(balance), float(estimated_salary), float(products_number)])
 
-        feature_names = ["credit_score", "tenure", "age", "balance", "estimated_salary", "products_number"]
-        X = pd.DataFrame([row], columns = feature_names)
-        prediction = loaded_model.predict(X)
+
+
+        X_train = data[['credit_score', 'tenure', 'age', 'balance', 'estimated_salary', 'products_number']]
+        y_train = data['churn']  
+        model = GradientBoostingClassifier(learning_rate=0.1, max_depth=3, min_samples_split=2, n_estimators=100)
+        model.fit(X_train, y_train)
+
+        # Tahmin yap
+        prediction = model.predict([row])                    
+        
+        st.write("Prediction:", prediction[0])
         if prediction[0] == 1:
             st.success("This customer is likely to leave. :thumbsup:")
         elif prediction[0] == 0:
