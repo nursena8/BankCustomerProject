@@ -45,9 +45,10 @@ if page == "Prediction":
         row = np.array([credit_score, tenure, age, balance, estimated_salary, products_number]).reshape(1, -1)
         class_probabilities = loaded_model.predict_proba(row)
         predicted_class = np.argmax(class_probabilities)
-        if prediction[0] == 1:
+        if predicted_class == 1:
             st.success("This customer is likely to leave. :thumbsup:")
-        elif prediction[0] == 0:
+        elif predicted_class == 0:
+            
             st.success("This customer is likely to stay. :thumbsup:")
         else:
             st.error("Try again later")
