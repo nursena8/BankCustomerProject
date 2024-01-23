@@ -31,8 +31,7 @@
    - Matplotlib and Seaborn were used for data visualization, aiding in understanding and presenting the data during the exploratory data analysis (EDA) phase.
 
 6. **Streamlit:**
-   - [Streamlit](https://streamlit.io/) was utilized to create a live web application. It provides a user-friendly interface for efficient and rapid development.
-   ![Streamlit Website](https://bankcustomerproject-nevtbnfnsyxpwfuyksfxyq.streamlit.app/)
+   - [Streamlit](https://streamlit.io/) was utilized to create a live web application. It provides a user-friendly interface for efficient and rapid development.[Streamlit Website](https://bankcustomerproject-nevtbnfnsyxpwfuyksfxyq.streamlit.app/)
 
 7. **Joblib:**
    - Joblib was chosen for saving and loading models, a crucial aspect for using the model in a live environment and managing deployment processes.
@@ -112,23 +111,27 @@ The following HTML files are required for the project to function properly:
 
 ## Streamlit Application
 [MY streamlit Website :)](https://bankcustomerproject-nevtbnfnsyxpwfuyksfxyq.streamlit.app/)
+
 <img width="828"   src="https://github.com/nursena8/BankCustomerProject/assets/115145369/11fdd03e-ea76-4feb-95e4-0d4e58534315">
 
 To start the Streamlit application, follow these steps:
 
 1. Install the Streamlit application:
-   - `!pip install streamlit`
-2. Run your streamlit project:
-  - streamlit run app.py
+     - `!pip install streamlit`
+3. Run your streamlit project:
+     - streamlit run app.py
 3. Go your port you  that you defineded
-- http://localhost:8501
-- <img width="1190"  src="https://github.com/nursena8/BankCustomerProject/assets/115145369/c1fdf473-46a7-4410-93a4-64b67cff8f8a">
+     - http://localhost:8501
+## Our project owerview
+
+<img width="1190"  src="https://github.com/nursena8/BankCustomerProject/assets/115145369/c1fdf473-46a7-4410-93a4-64b67cff8f8a">
 
 ## Evidentlu ai 
 1.Install evidentlu
  !pip install evidently
 2. Import evidently
 3. Monitor model performance metrics and useful data dashboards
+
 ## Future Work
 
 1. **Continuous Improvement:**
@@ -145,12 +148,13 @@ To start the Streamlit application, follow these steps:
 
 ## License
 This project has MIT License
+
 ## Owner
 Nursena Baykir
 
-
 Would you like to Ask me anything?
-[Mail](nursenabaykir@gmail.com)
+
+- [Mail](nursenabaykir@gmail.com)
 
 
 
