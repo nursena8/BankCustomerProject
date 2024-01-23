@@ -33,7 +33,7 @@ if page == "Prediction":
 
 
     if st.button("Predict"):
-        loaded_model  = joblib.load(model_file_path)
+        
         credit_score = float(credit_score)
      
         tenure = int(tenure)
@@ -41,9 +41,10 @@ if page == "Prediction":
         balance = float(balance)
         estimated_salary = float(estimated_salary)
         products_number = int(products_number)
-        
+        loaded_model  = joblib.load(model_file_path)
         row = np.array([credit_score, tenure, age, balance, estimated_salary, products_number]).reshape(1, -1)
-        prediction = loaded_model.predict(row)
+        class_probabilities = loaded_model.predict_proba(row)
+        predicted_class = np.argmax(class_probabilities)
         if prediction[0] == 1:
             st.success("This customer is likely to leave. :thumbsup:")
         elif prediction[0] == 0:
