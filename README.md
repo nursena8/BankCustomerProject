@@ -6,11 +6,12 @@
   <img width="100" src="https://github.com/nursena8/BankCustomerProject/assets/115145369/2e2fb617-49c9-466a-9b60-600c2025eaa0" height="100">
   <img width="100" src="https://github.com/nursena8/BankCustomerProject/assets/115145369/5882fb8f-e39d-4645-81c7-7d7f4b6605de" height="100">
 </p>
+
 # Bank Customer Churn Prediction Project
 
-This project is developed to predict the likelihood of churn for bank customers. The project has gone through various stages, including analyzing customer behaviors, making predictions with various models, and evaluating the performance of the model.
+- This project is developed to predict the likelihood of churn for bank customers. The project has gone through various stages, including analyzing customer behaviors, making predictions with various models, and evaluating the performance of the model.
 
-The insights obtained from the project contribute to providing valuable feedback to the bank, enabling it to improve and retain customers. By understanding various customer behaviors, the bank can make informed decisions to enhance its services and address any areas that may lead to customer churn.
+- The insights obtained from the project contribute to providing valuable feedback to the bank, enabling it to improve and retain customers. By understanding various customer behaviors, the bank can make informed decisions to enhance its services and address any areas that may lead to customer churn.
 
 ## Technologies Used:
 
@@ -95,3 +96,61 @@ The main objectives of this project are as follows:
 ## How to Download and Run
 
 1. Clone the project repository to your computer:
+- `git clone https://github.com/nursena8/BankCustomerProject.git`
+2.Install depndecies
+- `pip install -r requirements.txt`
+3. Run the streamlit app
+- `streamlit run app.py`
+## Required HTML Files
+
+The following HTML files are required for the project to function properly:
+
+1. `assets/class_report.html`: This html created by evidently ai show us classification reports.
+2. `assets/report.html`: This html created by evidently using Jpyter notebook shows us dataframe summary.
+3. `assets/data_quality_report.html`:this html created by evidently using Jupyter notebook shows us dataset correlatio n.
+
+
+## Streamlit Application
+[MY streamlit Website :)](https://bankcustomerproject-nevtbnfnsyxpwfuyksfxyq.streamlit.app/)
+<img width="828"   src="https://github.com/nursena8/BankCustomerProject/assets/115145369/11fdd03e-ea76-4feb-95e4-0d4e58534315">
+
+To start the Streamlit application, follow these steps:
+
+1. Install the Streamlit application:
+   - `!pip install streamlit`
+2. Run your streamlit project:
+  - streamlit run app.py
+3. Go your port you  that you defineded
+- http://localhost:8501
+- <img width="1190"  src="https://github.com/nursena8/BankCustomerProject/assets/115145369/c1fdf473-46a7-4410-93a4-64b67cff8f8a">
+
+## Evidentlu ai 
+1.Install evidentlu
+ !pip install evidently
+2. Import evidently
+3. Monitor model performance metrics and useful data dashboards
+
+## License
+This project has MIT License
+## Owner
+Nursena Baykir
+
+
+Would you like to Ask me anything?
+[Mail](nursenabaykir@gmail.com)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
