@@ -13,32 +13,6 @@
 
 - The insights obtained from the project contribute to providing valuable feedback to the bank, enabling it to improve and retain customers. By understanding various customer behaviors, the bank can make informed decisions to enhance its services and address any areas that may lead to customer churn.
 
-## Technologies Used:
-
-1. **Python:**
-   - The project is developed in Python, a language well-suited for data science projects due to its extensive library support and rapid prototyping capabilities.
-
-2. **Pandas:**
-   - Pandas, used for data manipulation and analysis, played a crucial role in processing and preprocessing the dataset.
-
-3. **NumPy:**
-   - NumPy, essential for numerical computations and data manipulation, facilitated various matrix operations and numerical tasks.
-
-4. **Scikit-Learn:**
-   - Scikit-Learn was employed for developing, training, and evaluating machine learning models, including the Gradient Boosting Classifier.
-
-5. **Matplotlib and Seaborn:**
-   - Matplotlib and Seaborn were used for data visualization, aiding in understanding and presenting the data during the exploratory data analysis (EDA) phase.
-
-6. **Streamlit:**
-   - [Streamlit](https://streamlit.io/) was utilized to create a live web application. It provides a user-friendly interface for efficient and rapid development.[Streamlit Website](https://bankcustomerproject-nevtbnfnsyxpwfuyksfxyq.streamlit.app/)
-
-7. **Joblib:**
-   - Joblib was chosen for saving and loading models, a crucial aspect for using the model in a live environment and managing deployment processes.
-
-8. **Evident AI:**
-   - [Evidently AI](https://www.evidentlyai.com) was employed to monitor and evaluate the model's performance continuously. This ensures ongoing assessment of the model's effectiveness in a live setting.
-   - 
 ## Project Objectives
 
 The main objectives of the project are as follows:
@@ -65,7 +39,44 @@ The main objectives of this project are as follows:
 - **Monitoring with Evident AI:**
   - Incorporated Evident AI for model monitoring and evaluation.
   - Evaluated the model's performance over time and made necessary adjustments.
+  - 
+## Models
+ - Classification model(GBM,RandomForestClassifier,SVC..)
+ - Cluster model(KMeans)
+   
+  **Feature Importance:**
+   - Identified key features influencing customer churn through feature importance analysis.
+  **Segmentation Insights:**
+   - Leveraged clustering models to gain insights into customer segmentation.
+   - Discovered patterns in customer behavior and preferences.
 
+
+## Technologies Used:
+
+1. **Python:**
+   - The project is developed in Python, a language well-suited for data science projects due to its extensive library support and rapid prototyping capabilities.
+
+2. **Pandas:**
+   - Pandas, used for data manipulation and analysis, played a crucial role in processing and preprocessing the dataset.
+
+3. **NumPy:**
+   - NumPy, essential for numerical computations and data manipulation, facilitated various matrix operations and numerical tasks.
+
+4. **Scikit-Learn:**
+   - Scikit-Learn was employed for developing, training, and evaluating machine learning models, including the Gradient Boosting Classifier.
+
+5. **Matplotlib and Seaborn:**
+   - Matplotlib and Seaborn were used for data visualization, aiding in understanding and presenting the data during the exploratory data analysis (EDA) phase.
+
+6. **Streamlit:**
+   - [Streamlit](https://streamlit.io/) was utilized to create a live web application. It provides a user-friendly interface for efficient and rapid development.[Streamlit Website](https://bankcustomerproject-nevtbnfnsyxpwfuyksfxyq.streamlit.app/)
+
+7. **Joblib:**
+   - Joblib was chosen for saving and loading models, a crucial aspect for using the model in a live environment and managing deployment processes.
+
+8. **Evident AI:**
+   - [Evidently AI](https://www.evidentlyai.com) was employed to monitor and evaluate the model's performance continuously. This ensures ongoing assessment of the model's effectiveness in a live setting.
+   
 ## Project Components
 
 1. **Streamlit App (app.py):**
@@ -96,11 +107,13 @@ The main objectives of this project are as follows:
 
 1. Clone the project repository to your computer:
 - `git clone https://github.com/nursena8/BankCustomerProject.git`
+  
 2.Install depndecies
 - `pip install -r requirements.txt`
+  
 3. Run the streamlit app
 - `streamlit run app.py`
-## Required HTML Files
+## HTML Files
 
 The following HTML files are required for the project to function properly:
 
@@ -122,6 +135,7 @@ To start the Streamlit application, follow these steps:
      - streamlit run app.py
 3. Go your port you  that you defineded
      - http://localhost:8501
+
 ## Our project owerview
 
 <img width="1190"  src="https://github.com/nursena8/BankCustomerProject/assets/115145369/c1fdf473-46a7-4410-93a4-64b67cff8f8a">
