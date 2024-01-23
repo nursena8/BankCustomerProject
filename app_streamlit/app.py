@@ -34,8 +34,9 @@ if page == "Prediction":
 
     if st.button("Predict"):
         loaded_model  = joblib.load(model_file_path)
-        row = np.array([credit_score, tenure, age, balance, estimated_salary, products_number]).reshape(1, -1)
-        prediction = loaded_model.predict(row)
+        row = np.array([credit_score, tenure, age, balance, estimated_salary, products_number])
+        X = pd.DataFrame([row], columns = ["credit_score","tenure","age","balance","estimated_salary","products_number"])
+        prediction = loaded_model.predict(X)
         if prediction[0] == 1:
             st.success("This customer is likely to leave. :thumbsup:")
         elif prediction[0] == 0:
