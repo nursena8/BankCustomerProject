@@ -34,6 +34,14 @@ if page == "Prediction":
 
     if st.button("Predict"):
         loaded_model  = joblib.load(model_file_path)
+        credit_score = float(credit_score)
+     
+        tenure = int(tenure)
+        age = int(age)
+        balance = float(balance)
+        estimated_salary = float(estimated_salary)
+        products_number = int(products_number)
+        
         row = np.array([credit_score, tenure, age, balance, estimated_salary, products_number]).reshape(1, -1)
         prediction = loaded_model.predict(row)
         if prediction[0] == 1:
