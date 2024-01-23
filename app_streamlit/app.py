@@ -42,6 +42,12 @@ if page == "Prediction":
             st.success("This customer is likely to stay. :thumbsup:")
         else:
             st.error("Try again later")
+        n_features_used_for_training = X_train.shape[1]
+
+        n_features_used_for_prediction = row.shape[1]
+
+
+        assert n_features_used_for_training == n_features_used_for_prediction, "Özellik sayıları eşleşmiyor!"
 
 elif page == "Class Report":
     st.markdown("## Class Report")
