@@ -5,7 +5,7 @@ import numpy as np
 from streamlit.components.v1 import html
 import os
 current_directory = os.path.dirname(os.path.abspath(__file__))
-model_file_path = os.path.join(current_directory, "gbm_model_production.joblib")
+model_file_path = os.path.join(current_directory, "gbm_model_production-2.joblib")
 
 st.set_page_config(page_title="Customer Churn Prediction App", page_icon=":bar_chart:")
 
