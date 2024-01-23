@@ -34,18 +34,12 @@ if page == "Prediction":
 
     if st.button("Predict"):
         loaded_model  = joblib.load(model_file_path)
-        new_data = [float(credit_score), float(tenure), float(age), float(balance), float(estimated_salary), float(products_number)]
-        new_data_array = np.array(new_data).reshape(1, -1)
-        
-        # Tahmin yap
-        prediction_gbm_model = loaded_model.predict(new_data_array)
-
-        # Tahmin sonucunu görüntüle
-        st.write("Prediction:", prediction_gbm_model[0])
-
-        if prediction_gbm_model[0] == 1:
+        loaded_model = joblib.load("gbm_model_production.joblib")
+        row = np.array([credit_score, tenure, age, balance, estimated_salary, products_number]).reshape(1, -1)
+        prediction = loaded_model.predict(row)
+        if prediction[0] == 1:
             st.success("This customer is likely to leave. :thumbsup:")
-        elif prediction_gbm_model[0] == 0:
+        elif prediction[0] == 0:
             st.success("This customer is likely to stay. :thumbsup:")
         else:
             st.error("Try again later")
