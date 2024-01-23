@@ -27,8 +27,8 @@ if page == "Prediction":
     credit_score = st.text_input("Credit score 300-850", "850")
     tenure = st.selectbox("Choose year amount of the spent at the bank", [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20])
     age = st.slider("Choose age", 18, 92)
-    balance = st.slider("Choose amount of account", 0, 200000)
-    estimated_salary = st.slider("Choose amount of estimated_salary", 0, 200000)
+    balance = st.slider("Choose amount of account", 0.0, 200000.0)
+    estimated_salary = st.slider("Choose amount of estimated_salary", 0.0, 200000.0)
     products_number = st.slider("Choose number of products", 0, 4)
 
 
