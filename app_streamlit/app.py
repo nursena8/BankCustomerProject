@@ -5,12 +5,13 @@ import numpy as np
 import os
 from streamlit.components.v1 import html
 from sklearn.ensemble import GradientBoostingClassifier
-def load_data():
-    data = pd.read_csv('Bank Customer Churn Prediction.csv') 
-    return data
+
 current_directory = os.path.dirname(os.path.abspath(__file__))
-
-
+new_path = os.path.join(current_directory, "Bank Customer Churn Prediction.csv")
+def load_data():
+    data = pd.read_csv(new_path) 
+    return data
+    
 st.set_page_config(page_title="Customer Churn Prediction App", page_icon=":bar_chart:")
 
 class_report_path = os.path.join(current_directory, "class_report.html")
