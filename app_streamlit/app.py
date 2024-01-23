@@ -9,10 +9,10 @@ model_file_path = os.path.join(current_directory, "gbm_model_production.joblib")
 
 st.set_page_config(page_title="Customer Churn Prediction App", page_icon=":bar_chart:")
 
-class_report_path = "class_report.html"
-data_quality_report_path = "data_quality_report.html"
-general_report_path = "report.html"
-
+class_report_path = os.path.join(current_directory, "class_report.html")
+data_quality_report_path = os.path.join(current_directory, "data_quality_report.html")
+general_report_path = os.path.join(current_directory, "report.html")
+image_path = os.path.join(current_directory, "machine.jpg")
 st.sidebar.markdown("---")
 st.sidebar.markdown("# Navigation")
 page = st.sidebar.radio("Select a report", ["Prediction","Class Report", "Data Quality Report", "General Report"])
