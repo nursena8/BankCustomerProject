@@ -6,9 +6,9 @@ from streamlit.components.v1 import html
 
 st.set_page_config(page_title="Customer Churn Prediction App", page_icon=":bar_chart:")
 
-class_report_path = "/content/class_report.html"
-data_quality_report_path = "/content/data_quality_report.html"
-general_report_path = "/content/report.html"
+class_report_path = "class_report.html"
+data_quality_report_path = "data_quality_report.html"
+general_report_path = "report.html"
 
 image_path = "machine.jpg"
 st.sidebar.image(image_path, caption="Bank Customer churn")
