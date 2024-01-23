@@ -34,21 +34,20 @@ if page == "Prediction":
 
     if st.button("Predict"):
         loaded_model  = joblib.load(model_file_path)
-        row = np.array([credit_score, tenure, age, balance, estimated_salary, products_number]).reshape(1, -1)
-        prediction = loaded_model.predict(row)
+        new_data = [float(credit_score), float(tenure), float(age), float(balance), float(estimated_salary), float(products_number)]
+        new_data_array = np.array(new_data).reshape(1, -1)
+# Tahmin yap
+        prediction_gbm_model = loaded_model.predict(new_data_array)
+
+# Tahmin sonucunu görüntüle
+        st.write("Prediction:", prediction_gbm_model[0])
         if prediction[0] == 1:
             st.success("This customer is likely to leave. :thumbsup:")
         elif prediction[0] == 0:
             st.success("This customer is likely to stay. :thumbsup:")
         else:
             st.error("Try again later")
-        n_features_used_for_training = X_train.shape[1]
-
-        n_features_used_for_prediction = row.shape[1]
-
-
-        assert n_features_used_for_training == n_features_used_for_prediction, "Özellik sayıları eşleşmiyor!"
-
+        
 elif page == "Class Report":
     st.markdown("## Class Report")
     with open(class_report_path, "r") as file:
