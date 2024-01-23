@@ -34,7 +34,6 @@ if page == "Prediction":
 
     if st.button("Predict"):
         loaded_model  = joblib.load(model_file_path)
-        loaded_model = joblib.load("gbm_model_production.joblib")
         row = np.array([credit_score, tenure, age, balance, estimated_salary, products_number]).reshape(1, -1)
         prediction = loaded_model.predict(row)
         if prediction[0] == 1:
