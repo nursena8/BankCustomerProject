@@ -10,8 +10,6 @@ class_report_path = "class_report.html"
 data_quality_report_path = "data_quality_report.html"
 general_report_path = "report.html"
 
-image_path = "machine.jpg"
-st.sidebar.image(image_path, caption="Bank Customer churn")
 st.sidebar.markdown("---")
 st.sidebar.markdown("# Navigation")
 page = st.sidebar.radio("Select a report", ["Prediction","Class Report", "Data Quality Report", "General Report"])
