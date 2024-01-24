@@ -100,7 +100,7 @@ The main objectives of this project are as follows:
 ## File Structure
 
 - `app.py`: Streamlit web application for live predictions.
-- `monitoring.ipynb`: Jupyter notebook for model monitoring using Evident AI.
+- `evidentlyai_monitoring.ipynb`: Jupyter notebook for model monitoring using Evident AI.
 - `project.ipynb`: Jupyter notebook for classification models.
 - `project.ipynb`: Jupyter notebook for clustering models.
 - `gbm_production_model.joblib`: save and use machine learning model.
