@@ -103,12 +103,12 @@ The main objectives of this project are as follows:
 - `evidentlyai_monitoring.ipynb`: Jupyter notebook for model monitoring using Evident AI.
 - `project.ipynb`: Jupyter notebook for classification models.
 - `project.ipynb`: Jupyter notebook for clustering models.
-- `gbm_production_model.joblib`: save and use machine learning model.
+- `gbm_production_model.joblib`: Save and use machine learning model.
 - `gbm_model_prediction.py`:Predict production model on your local.
-- `gbm.py`:Predict basic model on your local.
+- `gbm.py`:Predict basic model to predict local with all features.
 - `project.pdf`:You can find main project with pdf format too.
 - `view.pdf`:My reports and my ideas eith pdf format
-- `assets/html`:This files are exported by evidently ai.
+- `assets/html`:This files are exported by Evident AI.
   
 
 ## How to Download and Run
@@ -187,7 +187,7 @@ Nursena Baykir
 
 Would you like to Ask me anything?
 
-- [Mail](nursenabaykir@gmail.com)
+- [Mail](nursenabaykir@gmail.com)📫
 
 Thank you for your consideration.
 
