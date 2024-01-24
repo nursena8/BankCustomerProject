@@ -136,9 +136,9 @@ To start the Streamlit application, follow these steps:
      - `!pip install streamlit`
 3. Run your streamlit project:
      - streamlit run app.py
-3. Go your port you  that you defineded
+3. Go your port that you defineded
      - http://localhost:8501
-     - 
+       
 ## Deploy with Streamlit sharing
 1. I created app.py and run in my local.
 2. linked with github and created a repo to linked and deploy app.
