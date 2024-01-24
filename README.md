@@ -7,6 +7,8 @@
   <img width="100" src="https://github.com/nursena8/BankCustomerProject/assets/115145369/5882fb8f-e39d-4645-81c7-7d7f4b6605de" height="100">
 </p>
 
+## Danger note:You can open  my website with google chorme maybe safari can't open this.
+
 # Bank Customer Churn Prediction Project
 
 - This project is developed to predict the likelihood of churn for bank customers. The project has gone through various stages, including analyzing customer behaviors, making predictions with various models, and evaluating the performance of the model.
@@ -46,6 +48,7 @@ The main objectives of this project are as follows:
    
   **Feature Importance:**
    - Identified key features influencing customer churn through feature importance analysis.
+   - 
   **Segmentation Insights:**
    - Leveraged clustering models to gain insights into customer segmentation.
    - Discovered patterns in customer behavior and preferences.
