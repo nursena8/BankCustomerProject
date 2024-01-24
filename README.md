@@ -78,7 +78,7 @@ The main objectives of this project are as follows:
    - Joblib was chosen for saving and loading models, a crucial aspect for using the model in a live environment and managing deployment processes.
 
 8. **Evident AI:**
-   - [Evidently AI](https://www.evidentlyai.com) was employed to monitor and evaluate the model's performance continuously. This ensures ongoing assessment of the model's effectiveness in a live setting.
+   - [Evidently AI](https://www.evidentlyai.com) was employed to monitor and evaluate the model's performance continuously. This ensures ongoing assessment of the model's effectiveness in a live setting.I imported some monitoring metrics and dashboard using evidently ai with streeamlit shairng.(Evident ai has own cloud too) 
    
 ## Project Components
 
@@ -104,7 +104,12 @@ The main objectives of this project are as follows:
 - `project.ipynb`: Jupyter notebook for classification models.
 - `project.ipynb`: Jupyter notebook for clustering models.
 - `gbm_production_model.joblib`: save and use machine learning model.
-- `gbm_model_prediction.py`:Predict model on your local.
+- `gbm_model_prediction.py`:Predict production model on your local.
+- `gbm.py`:Predict basic model on your local.
+- `project.pdf`:You can find main project with pdf format too.
+- `view.pdf`:My reports and my ideas eith pdf format
+- `assets/html`:This files are exported by evidently ai.
+  
 
 ## How to Download and Run
 
@@ -120,8 +125,8 @@ The main objectives of this project are as follows:
 
 The following HTML files are required for the project to function properly:
 
-1. `assets/class_report.html`: This html created by evidently ai show us classification reports.
-2. `assets/report.html`: This html created by evidently using Jpyter notebook shows us dataframe summary.
+1. `assets/class_report.html`: This html created by evident ai show us classification reports.
+2. `assets/report.html`: This html created by evidently library using Jpyter notebook shows us dataframe summary.
 3. `assets/data_quality_report.html`:this html created by evidently using Jupyter notebook shows us dataset correlatio n.
 
 
@@ -136,14 +141,25 @@ To start the Streamlit application, follow these steps:
      - `!pip install streamlit`
 3. Run your streamlit project:
      - streamlit run app.py
-3. Go your port you  that you defineded
+3. Go your port that you defineded
      - http://localhost:8501
+       
+## Deploy with Streamlit sharing
+1. I created app.py and run in my local.
+2. linked with github and created a repo to linked and deploy app.
 
-## Our project owerview
+   -Note:
+   Don't give up Your app running on your local but deployment has some errors like version,packet downloads,moduleNotFound error.
+   - You can Look streamlit app logs and can fix problems with stackoverflows easly.
+   
+     <img width="585" alt="Ekran Resmi 2024-01-24 11 26 41" src="https://github.com/nursena8/BankCustomerProject/assets/115145369/b5352d85-8602-4073-8640-36639bbf111a">
+
+   
+## Our project overview
 
 <img width="1190"  src="https://github.com/nursena8/BankCustomerProject/assets/115145369/c1fdf473-46a7-4410-93a4-64b67cff8f8a">
 
-## Evidentlu ai 
+## Evident ai 
 1.Install evidentlu
  !pip install evidently
 2. Import evidently
@@ -172,6 +188,8 @@ Nursena Baykir
 Would you like to Ask me anything?
 
 - [Mail](nursenabaykir@gmail.com)
+
+Thank you for your consideration.
 
 
 
