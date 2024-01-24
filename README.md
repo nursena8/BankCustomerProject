@@ -104,7 +104,12 @@ The main objectives of this project are as follows:
 - `project.ipynb`: Jupyter notebook for classification models.
 - `project.ipynb`: Jupyter notebook for clustering models.
 - `gbm_production_model.joblib`: save and use machine learning model.
-- `gbm_model_prediction.py`:Predict model on your local.
+- `gbm_model_prediction.py`:Predict production model on your local.
+- `gbm.py`:Predict basic model on your local.
+- `project.pdf`:You can find main project with pdf format too.
+- `view.pdf`:My reports and my ideas eith pdf format
+- `assets/html`:This files are exported by evidently ai.
+  
 
 ## How to Download and Run
 
