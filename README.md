@@ -184,7 +184,7 @@ Would you like to Ask me anything?
 
 - [Mail](nursenabaykir@gmail.com)
 
-Thank you for your consider.
+Thank you for your consideration.
 
 
 
