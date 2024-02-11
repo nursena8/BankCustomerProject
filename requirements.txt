@@ -7,4 +7,3 @@ evidently==0.4.14
 streamlit==1.31.0
 joblib
 matplotlib
-python>=3.8
