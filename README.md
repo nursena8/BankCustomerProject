@@ -132,7 +132,7 @@ The following HTML files are required for the project to function properly:
 
 
 ## Streamlit Application
-[MY streamlit Website :)](https://bankcustomerproject-nevtbnfnsyxpwfuyksfxyq.streamlit.app/)
+[MY streamlit Website :)] (https://bankcustomerproject-4feyynfr99jzzpcegoeuq7.streamlit.app/)
 
 <img width="828"   src="https://github.com/nursena8/BankCustomerProject/assets/115145369/11fdd03e-ea76-4feb-95e4-0d4e58534315">
 
