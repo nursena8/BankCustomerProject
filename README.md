@@ -5,6 +5,7 @@
   <img width="100" src="https://github.com/nursena8/BankCustomerProject/assets/115145369/537473f2-af80-4daa-8a9a-535a8a77ed06" height="100">
   <img width="100" src="https://github.com/nursena8/BankCustomerProject/assets/115145369/2e2fb617-49c9-466a-9b60-600c2025eaa0" height="100">
   <img width="100" src="https://github.com/nursena8/BankCustomerProject/assets/115145369/5882fb8f-e39d-4645-81c7-7d7f4b6605de" height="100">
+  
 </p>
 
 ## Danger note:You can open  my website with google chorme maybe safari can't open this.
@@ -131,7 +132,7 @@ The following HTML files are required for the project to function properly:
 
 
 ## Streamlit Application
-[MY streamlit Website :)](https://bankcustomerproject-nevtbnfnsyxpwfuyksfxyq.streamlit.app/)
+[MY streamlit Website :)] (https://bankcustomerproject-4feyynfr99jzzpcegoeuq7.streamlit.app/)
 
 <img width="828"   src="https://github.com/nursena8/BankCustomerProject/assets/115145369/11fdd03e-ea76-4feb-95e4-0d4e58534315">
 
@@ -154,7 +155,12 @@ To start the Streamlit application, follow these steps:
    
      <img width="585" alt="Ekran Resmi 2024-01-24 11 26 41" src="https://github.com/nursena8/BankCustomerProject/assets/115145369/b5352d85-8602-4073-8640-36639bbf111a">
 
-   
+## Deploy with Docker
+1. I created dockerfile.
+2. run `docker build -t my-streamlit-app .`
+3. run `docker run -p 8501:8501 my-streamlit-ap`
+4. http://localhost:8501
+ 
 ## Our project overview
 
 <img width="1190"  src="https://github.com/nursena8/BankCustomerProject/assets/115145369/c1fdf473-46a7-4410-93a4-64b67cff8f8a">
